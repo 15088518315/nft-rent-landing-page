@@ -61,8 +61,7 @@ module.exports = {
             },
             {
                 test: /\.(png|gif|bmp|jpg)$/,
-                use: 'url-loader?limit=5000&name=image/[hash:8]-[name].[ext]',
-                publicPath: '../'},
+                use: 'url-loader'},
             {test: /\.js$/, use: 'babel-loader', exclude: /node_modules/}
         ]
     }
